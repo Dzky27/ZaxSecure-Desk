@@ -1,132 +1,130 @@
-ZaxSecure Desk V2
+# 🛡️ ZaxSecure Desk V2
 
-Web-based Cyber Security Incident Management System.
+### Cybersecurity Incident Management & Response Platform
 
-1. Deskripsi Aplikasi
+<p align="center">
+  **A centralized platform for managing, monitoring, and responding to cybersecurity incidents.**
+</p>
 
-ZaxSecure Desk merupakan aplikasi berbasis web untuk mengelola pelaporan, pencatatan, pemantauan, dan penanganan insiden keamanan siber secara terstruktur.
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-ZaxSecure%20Desk-B11217?style=for-the-badge&logo=shield&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Academic%20Project-2563EB?style=for-the-badge" />
+</p>
 
-2. Fitur Utama
+---
 
-Autentikasi dan login pengguna.
+## Overview
 
-Hak akses berdasarkan peran Administrator dan User.
+**ZaxSecure Desk V2** is a web-based cybersecurity incident management platform designed to support structured incident reporting, threat classification, investigation, evidence management, and incident response coordination.
 
-Pengelolaan data insiden.
+The platform provides a centralized workspace for security administrators and incident reporters to manage security events through an organized workflow.
 
-Kategorisasi dan klasifikasi insiden.
+Built with a focus on usability, access control, and structured incident documentation, ZaxSecure Desk aims to demonstrate how web technologies can support practical cybersecurity operations.
 
-Pengelolaan pengguna.
+## Core Capabilities
 
-Dashboard dan laporan analitik.
+| Module | Description |
+|---|---|
+| Incident Management | Create, monitor, and manage cybersecurity incident reports. |
+| Threat Classification | Organize incidents according to severity and priority. |
+| Investigation Workflow | Track investigation progress and incident updates. |
+| Evidence Management | Manage supporting digital evidence and attachments. |
+| Audit Trail | Maintain records of relevant user activities and changes. |
+| Role-Based Access | Separate administrative and reporter access. |
+| Dashboard & Reports | Present incident information through centralized monitoring views. |
 
-Jejak audit aktivitas.
+*Feature descriptions should reflect the functionality actually implemented in the deployed application.*
 
-Pengelolaan bukti atau lampiran insiden.
+## Technology Stack
 
-Catatan: sesuaikan daftar ini dengan fitur yang benar-benar tersedia dan berjalan.
+The project uses the following technologies, subject to verification against the actual source code:
 
-3. Teknologi
+- **Backend:** Laravel / PHP
+- **Database:** MySQL / MariaDB
+- **Frontend:** Blade, Tailwind CSS
+- **Build Tools:** Vite
+- **Client-side:** JavaScript
+- **Visualization:** Chart.js
+- **Icons:** Lucide
 
-Backend: Laravel dan PHP
+## Application Architecture
 
-Database: MySQL/MariaDB
+ZaxSecure Desk follows Laravel's application structure, separating responsibilities into several components:
 
-Frontend: Blade, Tailwind CSS, JavaScript
+```text
+ZaxSecure-Desk/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   └── Models/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+├── routes/
+├── storage/
+├── artisan
+├── composer.json
+└── README.md
+```
 
-Build Tool: Vite
+## Security Considerations
 
-Hosting: InfinityFree
+Security is an important part of the application's design and development process.
 
-4. URL Aplikasi
+The project considers the following areas:
 
+- Authentication and authorization.
+- Role-based access restrictions.
+- Input validation and request protection.
+- Secure handling of application configuration.
+- Protection of sensitive application files.
+- Digital evidence access restrictions.
+- Security testing against common web application vulnerabilities.
+
+The actual implementation and testing status of each control must be verified against the application.
+
+## Live Application
+
+🌐 **Production URL:**  
 https://zaxsecure.page.gd
 
-5. Instalasi Lokal
+The application is deployed using InfinityFree hosting for academic demonstration purposes.
 
-Clone repository.
+## Repository
 
-Jalankan composer install.
+💻 **Source Code:**  
+This repository contains the application source code and relevant project documentation.
 
-Salin .env.example menjadi .env.
+## Academic Project
 
-Isi konfigurasi database lokal pada .env.
+Developed as part of the **Web Application Development and Publication (Cyber Security)** coursework.
 
-Jalankan php artisan key:generate.
+**Developer:** Muhammad Dzaky Putra Pamungkas  
+**Student ID:** 20240810109  
+**Class:** TINFC-2024-04  
+**Program:** Informatics Engineering  
+**Institution:** Universitas Kuningan
 
-Jalankan migration sesuai kebutuhan dan kondisi database.
+## Disclaimer
 
-Jalankan npm install.
+ZaxSecure Desk is an academic project developed for educational purposes and cybersecurity application development practice.
 
-Jalankan npm run build.
+This application is intended for authorized use, testing, and demonstration in controlled environments. Do not use it to access, monitor, or manipulate systems or data without proper authorization.
 
-Jalankan php artisan serve.
+---
 
-6. Konfigurasi Environment
-
-Konfigurasi aplikasi dilakukan melalui environment variables.
-
-Contoh variabel:
-
-APP_NAME
-
-APP_ENV
-
-APP_KEY
-
-APP_URL
-
-DB_CONNECTION
-
-DB_HOST
-
-DB_PORT
-
-DB_DATABASE
-
-DB_USERNAME
-
-DB_PASSWORD
-
-Nilai rahasia tidak disertakan dalam repository.
-
-7. Penggunaan AI Agent
-
-AI agent yang digunakan:
-
-ChatGPT: membantu analisis, perencanaan, dan debugging.
-
-Antigravity: membantu pengembangan dan pemeriksaan kode.
-
-Claude: membantu dokumentasi dan penyusunan laporan.
-
-Contoh prompt utama dan proses verifikasi dijelaskan dalam laporan tugas.
-
-8. Self-Testing Keamanan
-
-Pengujian mencakup:
-
-SQL Injection dan XSS.
-
-Access control dan IDOR.
-
-Autentikasi dan manajemen sesi.
-
-HTTPS dan Security Headers.
-
-Pemeriksaan secret dalam repository.
-
-Audit dependensi.
-
-Hasil aktual pengujian dan perbaikan didokumentasikan dalam laporan tugas.
-
-9. Repository
-
-Source code: [ISI URL REPOSITORY GITHUB]
-
-10. Pengembang
-
-Muhammad Dzaky Putra Pamungkas
-NIM: 20240810109
-Program Studi Teknik Informatika
-Universitas Kuningan
+<p align="center">
+  **ZaxSecure Desk V2**
+  <br />
+  <sub>Structured Incident Management. Better Security Awareness.</sub>
+</p>
