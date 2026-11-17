@@ -1,0 +1,18 @@
+@props(['size' => '48', 'compact' => false])
+
+<a href="{{ route('index') }}" aria-label="ZaxSecure Desk">
+    <svg width="{{ $size }}" height="{{ $size }}" viewBox="0 0 48 54" fill="none" aria-hidden="true">
+        <defs>
+            <linearGradient id="zsg" x1="8" y1="0" x2="40" y2="54" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EF4444"/>
+                <stop offset="1" stop-color="#991B1B"/>
+            </linearGradient>
+        </defs>
+        <path d="M24 2 43 9v18c0 13-8.5 21-19 25C13.5 48 5 40 5 27V9L24 2Z" fill="url(#zsg)" stroke="rgba(255,255,255,.35)" stroke-width="1.2"/>
+        <path d="m15.5 27 6 6.5L33 20" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="wm" style="font-size:{{ $compact ? '21' : '24' }}px">
+        <span>Zax<em>Secure</em></span>
+        <span class="l2" style="font-size:{{ $compact ? '18' : '21' }}px">Desk</span>
+    </span>
+</a>
